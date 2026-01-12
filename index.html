@@ -46,7 +46,7 @@
 
                 <li>
                     <a class="profile-navigation" href="#">Mijn Profiel
-                        <img class="user-pic" src="./assets/pic_avatar.png" width="25" height="24"></img>
+                        <img class="user-pic" src="./assets/pic_avatar.png" alt="profile-photo" width="25" height="24">
                     </a>
                 </li>
             </ul>
@@ -55,98 +55,162 @@
         <header>
             <h1>Notifications preferences</h1>
             <nav class="user-role-navigation">
-                <button>Host</button>
-                <button>Guest</button>
+                <button type="button">Host</button>
+                <button type="button">Guest</button>
             </nav>
         </header>
     
         <main>
-            <form class="host-notifications" action="submit">
+            <form class="host-notifications" action="#">
                 <section class="reservation-section">
                     <h2>Reservations</h2>
-                    <label for="check-slider">Reservation requested</label>
+                    <label>
+                        Reservation requested
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation requested</label>
+                    <label>
+                        Reservation instant book created - open payment
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation requested</label>
+                    <label>
+                        Reservation pending paid by guest
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
+
+                    <label>
+                        Reservation paid by guest
+                        <input type="checkbox" class="checkbox-slider">
+                    </label>
+
+                    <label>
+                        New messages
+                        <input type="checkbox" class="checkbox-slider">
+                    </label>
                 </section>
 
                 <section class="cancelations-section">
                     <h2>Cancelations</h2>
-                    <label for="check-slider">Reservation pending</label>
+                    <label>
+                        Reservation pending
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation proposal</label>
+                    <label>
+                        Reservation proposal
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation payment (non-instant book)</label>
+                    <label>
+                        Reservation payment (non-instant book)
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
                 </section>
 
                 <section class="reminders-section">
                     <h2>Reminders</h2>
-                    <label for="check-slider">Reservation requested not answered</label>
+                    <label>
+                        Reservation requested not answered
                         <input type="checkbox" class="checkbox-slider">
-
-                    <label for="check-slider">Review guest</label>
+                    </label>
+    
+                    <label>
+                        Review guest
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
                 </section>
              <button type="submit" value="save">Save</button>
             </form>
 
-            <form class="guest-notifications" action="submit">
+            <form class="guest-notifications" action="#">
                 <section class="reservation-section">
                     <h2>Reservations</h2>
-                    <label for="check-slider">Reservation requested</label>
+                    <label>
+                        Reservation requested
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation instant book created - open payment</label>
+                    <label>
+                        Reservation instant book created - open payment
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation pending paid by guest</label>
+                    <label>
+                        Reservation pending paid by guest
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation rejected by host</label>
+                    <label>
+                        Reservation rejected by host
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation accepted by host</label>
+                    <label>
+                        Reservation accepted by host
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation paid by guest</label>
+                    <label>
+                        Reservation paid by guest
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">New messages</label>
+                    <label>
+                        New messages
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
                 </section>
 
                 <section class="cancelations-section">
                     <h2>Cancelations</h2>
-                    <label for="check-slider">Reservation pending</label>
+                    <label>
+                        Reservation pending
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation proposal</label>
+                    <label>
+                        Reservation proposal
                         <input type="checkbox" class="checkbox-slider">
+                    </label>                    
 
-                    <label for="check-slider">Reservation payment instant book - no message</label>
+                    <label>
+                        Reservation payment instant book - no message
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
+                
+                    <label>
+                        Reservation payment instant book - with message
+                        <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation payment instant book - with message</label>
+                    <label>
+                        Reservation canceled by support/guest/host
                         <input type="checkbox" class="checkbox-slider">
-
-                    <label for="check-slider">Reservation canceled by support/guest/host</label>
-                        <input type="checkbox" class="checkbox-slider">
+                    </label>
                 </section>
 
                 <section class="reminders-section">
                     <h2>Reminders</h2>
-                    <label for="check-slider">Host proposed a new date</label>
+                    <label>
+                        Host proposed a new date
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
+                    
+                    <label>
+                        Reservation open payment - instant book(30 min after accepting)
+                        <input type="checkbox" class="checkbox-slider">
+                    </label>
+                   
+                    <label>
+                        Reservation open payment - non instant book(24 hrs after accepting)
+                        <input type="checkbox" class="checkbox-slider">
+                    </label>
 
-                    <label for="check-slider">Reservation open payment - instant book</label>
+                    <label>
+                        Review: write a review about your stay
                         <input type="checkbox" class="checkbox-slider">
+                    </label>
                 </section>
              <button type="submit" value="save">Save</button>
             </form>

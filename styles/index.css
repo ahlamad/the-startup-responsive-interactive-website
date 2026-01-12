@@ -1,7 +1,10 @@
-.main-navigation {
-    img {
-        height: 1em;
-        width: 1em;
-        font-weight: 2px;
-    }
+/* RUBIK VARIABLE REGULAR */
+@font-face {
+    font-family: 'Rubik Variable';
+    src: url('../font/rubik-variable-latin.woff2');
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Rubik Variable';
 }

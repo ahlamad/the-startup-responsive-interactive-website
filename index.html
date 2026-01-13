@@ -61,13 +61,31 @@
         </header>
     
         <main>
+             <!-- Host Notifications Form  -->
             <form class="host-notifications" action="#">
                 <section class="reservation-section">
                     <h2>Reservations</h2>
-                    <label>
-                        Reservation requested
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
+
+                    <fieldset>
+                        <legend>Reservation requested</legend>
+                        
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                Push Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>                 
+                    </fieldset>
+
 
                     <label>
                         Reservation instant book created - open payment
@@ -123,98 +141,304 @@
              <button type="submit" value="save">Save</button>
             </form>
 
+             <!-- Guest Notifications Form  -->
             <form class="guest-notifications" action="#">
-                <section class="reservation-section">
-                    <h2>Reservations</h2>
-                    <label>
-                        Reservation requested
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation instant book created - open payment
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation pending paid by guest
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation rejected by host
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation accepted by host
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation paid by guest
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        New messages
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-                </section>
-
-                <section class="cancelations-section">
-                    <h2>Cancelations</h2>
-                    <label>
-                        Reservation pending
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation proposal
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>                    
-
-                    <label>
-                        Reservation payment instant book - no message
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-                
-                    <label>
-                        Reservation payment instant book - with message
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation canceled by support/guest/host
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-                </section>
-
-                <section class="reminders-section">
-                    <h2>Reminders</h2>
-                    <label>
-                        Host proposed a new date
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
+                    <fieldset class="reservation-section">
+                    <legend>Reservations</legend>
                     
-                    <label>
-                        Reservation open payment - instant book(30 min after accepting)
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-                   
-                    <label>
-                        Reservation open payment - non instant book(24 hrs after accepting)
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
+                        <h2>Reservation requested</h2>
+                        
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
 
-                    <label>
-                        Review: write a review about your stay
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-                </section>
+                            <label class="notification-option-is-disabled">
+                                Push Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>                 
+
+
+                        <h2>Reservation instant book created - open payment</h2>
+
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                Push Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+
+                        <h2>Reservation pending paid by guest</h2>
+
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                Push Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+
+                        <h2>Reservation rejected by host</h2>
+
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox">
+                            </label>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+                
+
+                        <h2>Reservation accepted by host</h2>
+
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox">
+                            </label>
+
+                            <p>SMS/Whatsapp Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+                   
+
+                        <h2>Reservation paid by guest</h2>
+
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox">
+                            </label>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+                            
+                        <h2>New messages</h2>
+
+                            <label class="notification-option">
+                                Email Notifications:
+                                <input type="checkbox">
+                            </label>
+
+                            <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox">
+                            </label>
+
+                            <label class="notification-option">
+                                SMS/Whatsapp Notifications:
+                                <input type="checkbox">
+                            </label>
+                    </fieldset>
+
+                    <fieldset class="cancelations-section">
+                        <legend>Cancelations</legend>
+                            
+                        <h2>Reservation pending</h2>
+
+                            <label class="notification-option">
+                                Email Notifications:
+                                <input type="checkbox" checked>
+                            </label>
+
+                            <p>Push Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+
+             
+                        <h2>Reservation proposal</h2>
+
+                            <label class="notification-option">
+                                Email Notifications:
+                                <input type="checkbox">
+                            </label>
+
+                            <p>Push Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+                                 
+                            
+                            <h2>Reservation payment instant book - no message</h2>
+
+                            <label class="notification-option">
+                                Email Notifications:
+                                <input type="checkbox" checked>
+                            </label>
+
+                            <p>Push Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+                  
+
+                        <h2>Reservation payment instant book - with message</h2>
+
+                            <label class="notification-option">
+                                Email Notifications:
+                                <input type="checkbox" checked>
+                            </label>
+
+                            <p>Push Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+                
+
+                        <h2>Reservation canceled by support/guest/host</h2>
+
+                            <p>Email Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <p>Push Notifications:
+                                <span class="required">(required)</span>
+                            </p>
+
+                            <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+                    </fieldset>
+
+                <fieldset class="reminders-section">
+                    <legend>Reminders</legend>
+
+                    <h2>Host proposed a new date</h2>
+
+                        <p>Email Notifications:
+                            <span class="required">(required)</span>
+                        </p>
+
+                        <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+
+                        <label class="notification-option">
+                                SMS/Whatsapp Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+                    
+
+                    <h2>Reservation open payment - instant book(30 min after accepting)</h2>
+
+                        <p>Email Notifications:
+                            <span class="required">(required)</span>
+                        </p>
+
+                        <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+
+                        <label class="notification-option">
+                                SMS/Whatsapp Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+                    
+            
+                    <h2>Reservation open payment - non instant book(24 hrs after accepting)</h2>
+
+                        <p>Email Notifications:
+                            <span class="required">(required)</span>
+                        </p>
+
+                        <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+
+                        <label class="notification-option">
+                                SMS/Whatsapp Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+                   
+
+                    <h2>Review: write a review about your stay</h2>
+
+                        <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+
+                        <label class="notification-option">
+                                Push Notifications:
+                                <input type="checkbox" checked>
+                        </label>
+
+                             <label class="notification-option-is-disabled">
+                                SMS/WhatsApp Notifications:
+                                <input type="checkbox" disabled>
+                                <span class="description">Not supported</span>
+                            </label>
+                </fieldset>
              <button type="submit" value="save">Save</button>
             </form>
         </main>
-        
     </body>
 </html>

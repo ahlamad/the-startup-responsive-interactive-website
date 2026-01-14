@@ -1,0 +1,64 @@
+/* RUBIK VARIABLE REGULAR */
+@font-face {
+    font-family: 'Rubik Variable';
+    src: url('../font/rubik-variable-latin.woff2');
+    font-weight: 400;
+}
+
+/* KLEUREN */
+:root {
+    --color-green: #0FB08A;
+    --color-green-darkened: #05755C;
+
+    --color-text: #4F4C4C;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    /* Ranking / Notifications */
+    --color-primary: #0FB08A;
+    --color-secondary: #05755C;
+    --color-yellow: #FDB000;
+    --color-blue: #4376BA; 
+    --color-red: #B34040;
+
+    --color-blue-darkened: #365C8F;
+    --color-yellow-darkened: #D99D26;
+    --color-turquoise: #336569;
+    --color-grey-medium: #ADB5BD;
+    --color-grey-light: #E7E7E7;
+    --color-white-off: #FBFBFB;
+}
+
+
+.checkbox-slider {
+    appearance: none;
+    width: 4em;
+    aspect-ratio: 2/1;
+    margin: .5em;
+    background-color: #E7E7E7;
+    border-radius: .9em;
+    box-shadow: 0 0 2px;
+    font-size: .9em;
+    cursor: pointer;
+    padding: .12em;
+
+        &::after {
+        content: "";
+        display: block;
+        width: 1.77em;
+        aspect-ratio: 1;
+        background-color: white;
+        border-radius: inherit;
+        box-shadow: 0 0 2px ;
+
+        transition: .2s;
+        }
+
+        &:checked {
+            background-color: #0FB08A;
+        }
+
+        &:checked::after {
+            translate: 2em;
+        }
+}

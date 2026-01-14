@@ -36,17 +36,31 @@ fieldset {
   }
 }
 
-label,
-p {
-  display: flex;
-  place-items: center;
+.required,
+.notification-option,
+.notification-option-is-disabled {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.check-slider,
+.required {
+  grid-column: 2;
+  justify-self: end;
+}
+
+.description {
+  grid-column: 2;
+  font-size: 0.85em;
+  font-style: italic;
+  color: var(--color-grey-medium);
 }
 
 p {
     font-size: 1em;
 
     .required {
-        color: #B34040;
+        color: var(--color-red);
         font-size: 0.9em;
         margin-left: auto;
     }
@@ -66,4 +80,5 @@ p {
 
 .notification-option-is-disabled {
   cursor: not-allowed;
+  opacity: 0.65;
 }

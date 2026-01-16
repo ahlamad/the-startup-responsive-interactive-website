@@ -1,6 +1,7 @@
 body {
   font-family: 'Rubik Variable';
   color: var(--color-text);
+  padding-bottom: 7em;
 }
 
 .nav-bar{

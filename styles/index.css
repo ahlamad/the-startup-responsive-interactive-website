@@ -4,6 +4,12 @@ body {
   padding-bottom: 7em;
 }
 
+.home-bar {
+  img {
+    padding: 1em;
+  }
+}
+
 .nav-bar{
     background-color: var(--color-white);
     position: fixed;
@@ -57,11 +63,17 @@ h1 {
     border-radius: 6px;
     width: 5em;
     padding: .6em;
+    cursor: pointer;
 
     &:first-of-type {
       background-color: var(--color-white);
       color: var(--color-text);
       border: 2px solid var(--color-grey-medium);
+    }
+
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
     }
   }
 }

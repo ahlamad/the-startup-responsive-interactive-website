@@ -76,4 +76,5 @@
   border-radius: 6px ;
   color: var(--color-primary);
   font-weight: 600;
+  cursor: pointer;
 }

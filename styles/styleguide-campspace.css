@@ -51,7 +51,7 @@
         border-radius: inherit;
         box-shadow: 0 0 2px ;
 
-        transition: .2s;
+        transition: ease-in-out .2s;
         }
 
         &:checked {
@@ -61,4 +61,25 @@
         &:checked::after {
             translate: 2em;
         }
+}
+
+.save-button {
+  width: 4em;
+  font-size: 1em;
+  margin: .5em;
+  padding: .8em;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  border: 2px solid var(--color-grey-light);
+  background-color: var(--color-white);
+  border-radius: 6px ;
+  color: var(--color-primary);
+  font-weight: 600;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: .5s;
+  }
 }

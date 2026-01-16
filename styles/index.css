@@ -160,3 +160,28 @@ p {
   cursor: not-allowed;
   opacity: 0.85;
 }
+
+.save-button {
+  position: relative;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: var(--color-primary);
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  &:hover::after {
+    width: 3.8em;
+  }
+
+  &:hover {
+    color: white;
+  }
+}

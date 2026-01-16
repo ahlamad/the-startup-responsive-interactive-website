@@ -1,5 +1,6 @@
 body {
   font-family: 'Rubik Variable';
+  color: var(--color-text);
 }
 
 .nav-bar{
@@ -34,6 +35,33 @@ body {
           }
         }
     }
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.user-role-navigation {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  button {
+    font-size: 1em;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    border-radius: 6px;
+    width: 5em;
+    padding: .6em;
+
+    &:first-of-type {
+      background-color: var(--color-white);
+      color: var(--color-text);
+      border: 2px solid var(--color-grey-medium);
+    }
+  }
 }
 
 form {

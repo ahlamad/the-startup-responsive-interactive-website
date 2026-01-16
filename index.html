@@ -62,7 +62,7 @@
         </header>
     
         <main>
-             <!-- Host Notifications Form  -->
+             <!-- Host Notifications Form 
             <form class="host-notifications" action="#">
                 <section class="reservation-section">
                     <h2>Reservations</h2>
@@ -140,18 +140,21 @@
                     </label>
                 </section>
              <button type="submit" value="save">Save</button>
-            </form>
+            </form> -->
 
              <!-- Guest Notifications Form  -->
             <form class="guest-notifications" action="#">
                     <fieldset class="reservation-section">
                     <legend>Reservations</legend>
                     
-                        <h2>Reservation requested</h2>
+                    <fieldset class="reservation-section-section">
+                        <legend>Reservation requested</legend>
                         
-                            <p>Email Notifications:
+                            <label class="notification-option-is-required">
+                                Email Notifications:
+                                <input type="checkbox" class="checkbox-slider" checked disabled>
                                 <span class="required">(required)</span>
-                            </p>
+                            </label>
 
                             <label class="notification-option-is-disabled">
                                 Push Notifications:
@@ -164,13 +167,16 @@
                                 <input type="checkbox" class="checkbox-slider" disabled>
                                 <span class="description">Not supported</span>
                             </label>                 
-                            <hr>
+                    </fieldset>
 
-                        <h2>Reservation instant book created - open payment</h2>
+                    <fieldset class="reservation-section-section">
+                        <legend>Reservation instant book created - open payment</legend>
 
-                            <p>Email Notifications:
+                            <label class="notification-option-is-required">
+                                Email Notifications:
+                                <input type="checkbox" class="checkbox-slider" checked disabled>
                                 <span class="required">(required)</span>
-                            </p>
+                            </label>
 
                             <label class="notification-option-is-disabled">
                                 Push Notifications:
@@ -183,13 +189,16 @@
                                 <input type="checkbox" class="checkbox-slider" disabled >
                                 <span class="description">Not supported</span>
                             </label>
-                            <hr>
+                    </fieldset>
 
-                        <h2>Reservation pending paid by guest</h2>
+                    <fieldset class="reservation-section-section">
+                        <legend>Reservation pending paid by guest</legend>
 
-                            <p>Email Notifications:
+                            <label class="notification-option-is-required">
+                                Email Notifications:
+                                <input type="checkbox" class="checkbox-slider" checked disabled>
                                 <span class="required">(required)</span>
-                            </p>
+                            </label>
 
                             <label class="notification-option-is-disabled">
                                 Push Notifications:
@@ -202,13 +211,16 @@
                                 <input type="checkbox" class="checkbox-slider" disabled>
                                 <span class="description">Not supported</span>
                             </label>
-                            <hr>
+                    </fieldset>
 
-                        <h2>Reservation rejected by host</h2>
+                    <fieldset class="reservation-section-section">
+                        <legend>Reservation rejected by host</legend>
 
-                            <p>Email Notifications:
+                            <label class="notification-option-is-required">
+                                Email Notifications:
+                                <input type="checkbox" class="checkbox-slider" checked disabled>
                                 <span class="required">(required)</span>
-                            </p>
+                            </label>
 
                             <label class="notification-option">
                                 Push Notifications:
@@ -220,30 +232,37 @@
                                 <input type="checkbox" class="checkbox-slider" disabled>
                                 <span class="description">Not supported</span>
                             </label>
-                            <hr>
+                    </fieldset>
 
-                        <h2>Reservation accepted by host</h2>
+                    <fieldset class="reservation-section-section">
+                        <legend>Reservation accepted by host</legend>
 
-                            <p>Email Notifications:
+                            <label class="notification-option-is-required">
+                                Email Notifications:
+                                <input type="checkbox" class="checkbox-slider" checked disabled>
                                 <span class="required">(required)</span>
-                            </p>
+                            </label>
 
                             <label class="notification-option">
                                 Push Notifications:
                                 <input type="checkbox" class="checkbox-slider">
                             </label>
 
-                            <p>SMS/Whatsapp Notifications:
+                            <label class="notification-option-is-required">
+                                SMS/Whatsapp Notifications:
+                                <input type="checkbox" class="checkbox-slider" checked disabled>
                                 <span class="required">(required)</span>
-                            </p>
-                            <hr>
+                            </label>
+                    </fieldset>
 
+                    <fieldset class="reservation-section-section">
+                        <legend>Reservation paid by guest</legend>
 
-                        <h2>Reservation paid by guest</h2>
-
-                            <p>Email Notifications:
+                            <label class="notification-option-is-required">
+                                Email Notifications:
+                                <input type="checkbox" class="checkbox-slider" checked disabled>
                                 <span class="required">(required)</span>
-                            </p>
+                            </label>
 
                             <label class="notification-option">
                                 Push Notifications:
@@ -255,9 +274,10 @@
                                 <input type="checkbox" class="checkbox-slider" disabled>
                                 <span class="description">Not supported</span>
                             </label>
-                            <hr>
+                    </fieldset>
                             
-                        <h2>New messages</h2>
+                    <fieldset class="reservation-section-section">
+                        <legend>New messages</legend>
 
                             <label class="notification-option">
                                 Email Notifications:
@@ -273,6 +293,7 @@
                                 SMS/Whatsapp Notifications:
                                 <input type="checkbox" class="checkbox-slider">
                             </label>
+                    </fieldset>
                     </fieldset>
 
                     <fieldset class="cancelations-section">

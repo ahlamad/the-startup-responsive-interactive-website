@@ -1,11 +1,14 @@
 body {
-    font-family: 'Rubik Variable';
+  font-family: 'Rubik Variable';
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  .reservation-section {
+    background-color: var(--color-white);
+  }
 }
 
 fieldset {
@@ -13,7 +16,7 @@ fieldset {
   padding: 3em;
   padding-top: .8em;
   margin-bottom: 1.5rem;
-  background-color: #FBFBFB;
+  background-color: var(--color-white-off);
 
   legend {
     font-weight: 600;
@@ -28,7 +31,11 @@ fieldset {
     padding: 1em;
     padding-left: 0;
     padding-top: 0;
-    color: #4F4C4C;
+    color: var(--color-text);
+  }
+
+  label {
+    padding: .5em;
   }
 
   hr {
@@ -37,16 +44,35 @@ fieldset {
 }
 
 .required,
+.notification-option-is-required,
 .notification-option,
 .notification-option-is-disabled {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-items: center;
+
+    .required {
+      color: var(--color-red);
+    }
 }
 
-.check-slider,
+.checkbox-slider,
 .required {
   grid-column: 2;
   justify-self: end;
+
+      &:disabled {
+        background-color: var(--color-grey-medium);
+          cursor: not-allowed;
+
+         &::after {
+            background-color:var(--color-white-off);
+         }
+    }
+
+    &:checked&:disabled {
+      background-color: var(--color-primary);
+    }
 }
 
 .description {
@@ -66,19 +92,7 @@ p {
     }
 }
 
-.checkbox-slider {
-    margin-left: auto;
-    &:disabled {
-        background-color: var(--color-green-darkened);
-          cursor: not-allowed;
-
-         &::after {
-            background-color:var(--color-white-off);
-         }
-    }
-}
-
 .notification-option-is-disabled {
   cursor: not-allowed;
-  opacity: 0.65;
+  opacity: 0.85;
 }

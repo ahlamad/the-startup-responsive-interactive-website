@@ -2,6 +2,40 @@ body {
   font-family: 'Rubik Variable';
 }
 
+.nav-bar{
+    background-color: var(--color-white);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 4em;
+    place-items: center;
+
+    ul {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 1em;
+
+        li {
+          list-style: none;
+
+          a {
+            display: flex;
+            place-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            gap: .1em;
+
+            .nav-label {
+              color: var(--color-text);
+              font-size: .7em;
+            }
+          }
+        }
+    }
+}
+
 form {
   display: flex;
   flex-direction: column;

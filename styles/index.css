@@ -2,23 +2,29 @@ body {
   font-family: 'Rubik Variable';
   color: var(--color-text);
   padding-bottom: 7em;
+  margin: 0;
 }
 
 .home-bar {
+  box-shadow: 0 0 9px rgba(0, 0, 0, .25);
+  height: 6vh;
+  padding-top: .5em;
+
   img {
-    padding: 1em;
+    padding: .5em;
+    padding-left: 1em;
   }
 }
 
 .nav-bar{
-    background-color: var(--color-white);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 4em;
-    place-items: center;
+  background-color: var(--color-white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 4em;
+  place-items: center;
 
     ul {
         display: grid;
@@ -50,31 +56,43 @@ h1 {
   padding: 1em;
 }
 
-.user-role-navigation {
+.role-navigation {
   display: flex;
-  gap: 10px;
+  /* Items gaan naar de volgende regel als het niet meer past naast elkaar */
+  flex-wrap: wrap;
   justify-content: center;
+  border-bottom: 2px solid var(--color-grey-light);
+  margin-bottom: 1em;
 
-  button {
-    font-size: 1em;
-    background-color: var(--color-green);
-    color: var(--color-white);
+  .role-label {
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 0.95em;
+    color: var(--color-text);
+  }
+
+   button {
+    background: none;
     border: none;
-    border-radius: 6px;
-    width: 5em;
-    padding: .6em;
+    border-bottom: 3px solid transparent;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1em;
+    color: var(--color-text);
     cursor: pointer;
 
-    &:first-of-type {
-      background-color: var(--color-white);
-      color: var(--color-text);
-      border: 2px solid var(--color-grey-medium);
-    }
-
     &:hover {
-      background-color: var(--color-secondary);
-      color: var(--color-white);
+      color: var(--color-primary);
     }
+  }
+
+  .active {
+    border-color: var(--color-primary);
+    font-weight: 600;
+    color: var(--color-primary);
   }
 }
 
@@ -82,6 +100,7 @@ form {
   display: flex;
   flex-direction: column;
   place-items: center;
+
   .reservation-section {
     background-color: var(--color-white);
   }
@@ -148,7 +167,7 @@ fieldset {
     }
 
     &:checked&:disabled {
-      background-color: var(--color-primary);
+      background-color: var(--color-grey-medium);
     }
 }
 

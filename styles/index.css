@@ -9,6 +9,7 @@ body {
   box-shadow: 0 0 9px rgba(0, 0, 0, .25);
   height: 6vh;
   padding-top: .5em;
+  width: 100vw;
 
   img {
     padding: .5em;
@@ -107,34 +108,22 @@ form {
 }
 
 fieldset {
-  border: 1px solid #ADB5BD;
-  padding: 3em;
+  border: 1px solid var(--color-grey-medium);
   padding-top: .8em;
+  margin: 1em;
   margin-bottom: 1.5rem;
   background-color: var(--color-white-off);
 
-  legend {
+  legend {  
+    text-align: center;
     font-weight: 600;
-    padding: .4em;
-    font-size: 1.5em;
-    color: #4F4C4C;
-  }
-
-  h2 {
-    font-weight: 400;
+    padding: .6em;
     font-size: 1.3em;
-    padding: 1em;
-    padding-left: 0;
-    padding-top: 0;
     color: var(--color-text);
   }
 
   label {
     padding: .5em;
-  }
-
-  hr {
-    margin: 2.5em;
   }
 }
 
@@ -145,6 +134,7 @@ fieldset {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+  white-space: nowrap;
 
     .required {
       color: var(--color-red);

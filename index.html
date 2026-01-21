@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,23 +55,22 @@
         </nav>
 
         <header>
-            <h1>Notifications preferences</h1>
+            <h1>Notificatie voorkeuren</h1>
 
             <nav class="role-navigation">
                 <p class="role-label">Je wijzigt de notificaties momenteel als:</p>
 
-                <button type="button">Host</button>
-                <button type="button" class="active">Guest</button>
+                <button type="button">Verhuurder</button>
+                <button type="button" class="active">Gast</button>
             </nav>
         </header>
-    
-        <nav class="sticky-section-navigation">
-            <button class="reservation-section" class="active">Reservations</button>
-            <button class="cancelations-section">Cancelations</button>
-            <button class="reminders-section">Reminders</button>
-        </nav>
 
         <main>
+            <nav class="sticky-section-navigation">
+                <button type="button" id="reservation-section" class="active">Reservations</button>
+                <button type="button" id="cancelations-section">Cancelations</button>
+                <button type="button" id="reminders-section">Reminders</button>
+            </nav>
              <!-- Host Notifications Form 
             <form class="host-notifications" action="#">
                 <section class="reservation-section">

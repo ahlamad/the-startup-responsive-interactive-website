@@ -92,9 +92,9 @@ h1 {
   }
 
   .active {
-    border-color: var(--color-primary);
+    border-color: var(--color-secondary);
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-secondary);
   }
 }
 
@@ -158,8 +158,27 @@ fieldset {
     text-align: center;
     font-weight: 600;
     padding: .6em;
+    padding-bottom: 0;
     font-size: 1.3em;
     color: var(--color-text);
+  }
+
+  .notification-details {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2.5em;
+    color: #666;
+    font-size: 0.9em;
+    color: var(--color-secondary);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+    
+    p {
+      font-size: 0.7em;
+      color: var(--color-text);
+    }
   }
 
   label {
@@ -210,12 +229,12 @@ fieldset {
 }
 
 p {
-    font-size: 1em;
+  font-size: 1em;
 
-    .required {
-        color: var(--color-red);
-        font-size: 0.9em;
-    }
+  .required {
+      color: var(--color-red);
+      font-size: 0.9em;
+  }
 }
 
 .notification-option-is-disabled {

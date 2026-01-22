@@ -29,26 +29,26 @@ body {
   place-items: center;
 
     ul {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        gap: 1em;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      gap: 1em;
 
-        li {
-          list-style: none;
+      li {
+        list-style: none;
 
-          a {
-            display: flex;
-            place-items: center;
-            flex-direction: column;
-            text-decoration: none;
-            gap: .1em;
+        a {
+          display: flex;
+          place-items: center;
+          flex-direction: column;
+          text-decoration: none;
+          gap: .1em;
 
-            .nav-label {
-              color: var(--color-text);
-              font-size: .7em;
-            }
+          .nav-label {
+            color: var(--color-text);
+            font-size: .7em;
           }
         }
+      }
     }
 }
 

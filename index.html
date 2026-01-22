@@ -67,10 +67,11 @@
 
         <main>
             <nav class="sticky-section-navigation">
-                <button type="button" id="reservation-section" class="active">Reserveringen</button>
-                <button type="button" id="cancelations-section">Annuleringen</button>
-                <button type="button" id="reminders-section">Herinneringen</button>
+                <a href="#reserveringen" class="active">Reserveringen</a>
+                <a href="#annuleringen">Annuleringen</a>
+                <a href="#herinneringen">Herinneringen</a>
             </nav>
+
              <!-- Host Notifications Form 
             <form class="host-notifications" action="#">
                 <section class="reservation-section">
@@ -153,7 +154,7 @@
 
              <!-- Guest Notifications Form  -->
             <form class="guest-notifications" action="#">
-                    <fieldset class="reservations-section">
+                    <fieldset id="reserveringen" class="reservations-section">
                     <legend>Reserveringen</legend>
                     
                     <fieldset class="reservation-section-section">
@@ -340,7 +341,7 @@
                     </fieldset>
                     </fieldset>
 
-                    <fieldset class="cancelations-section">
+                    <fieldset id="annuleringen" class="cancelations-section">
                         <legend>Annuleringen</legend>
                             
                         <fieldset class="cancelations-section-section">
@@ -503,7 +504,7 @@
                         </fieldset>
              
                         <fieldset class="reminders-section-section">
-                            <legend>Openstaande reserveringsbetaling(directe reservering)</legend>
+                            <legend>Openstaande betaling 1</legend>
 
                                 <details class="notification-details">
                                     <summary>Wat betekent deze notificatie?</summary>
@@ -528,7 +529,7 @@
                         </fieldset>
 
                         <fieldset class="reminders-section-section">
-                            <legend>Openstaande reserveringsbetaling(24 uur na acceptatie)</legend>
+                            <legend>Openstaande betaling 2</legend>
 
                                 <details class="notification-details">
                                     <summary>Wat betekent deze notificatie?</summary>

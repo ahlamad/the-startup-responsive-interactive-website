@@ -74,7 +74,7 @@
   border: 2px solid var(--color-grey-light);
   background-color: var(--color-white);
   border-radius: 6px ;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-weight: 600;
   cursor: pointer;
 }

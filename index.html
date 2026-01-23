@@ -74,271 +74,355 @@
 
              <!-- Host Notifications Form -->
             <form class="host-notifications hidden" action="#">
-                <section class="reservation-section">
-                    <h2>Reservations</h2>
-
-                    <fieldset>
-                        <legend>Reservation requested</legend>
-                        
-                            <p>Email Notifications:
-                                <span class="required">(required)</span>
-                            </p>
-
-                            <label class="notification-option-is-disabled">
-                                Push Notifications:
-                                <input type="checkbox" disabled>
-                                <span class="description">Not supported</span>
-                            </label>
-
-                            <label class="notification-option-is-disabled">
-                                SMS/WhatsApp Notifications:
-                                <input type="checkbox" disabled>
-                                <span class="description">Not supported</span>
-                            </label>                 
-                    </fieldset>
-
-
-                    <label>
-                        Reservation instant book created - open payment
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation pending paid by guest
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation paid by guest
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        New messages
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-                </section>
-
-                <section class="cancelations-section">
-                    <h2>Cancelations</h2>
-                    <label>
-                        Reservation pending
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation proposal
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-
-                    <label>
-                        Reservation payment (non-instant book)
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
-                </section>
-
-                <section class="reminders-section">
-                    <h2>Reminders</h2>
-                    <label>
-                        Reservation requested not answered
-                        <input type="checkbox" class="checkbox-slider">
-                    </label>
+                <fieldset id="reserveringen" class="reservations-section">
+                    <legend>Reserveringen</legend>
     
-                    <label>
-                        Review guest
-                        <input type="checkbox" class="checkbox-slider">
+                <fieldset class="reservation-section-section">
+                    <legend>Reservering aangevraagd</legend>
+
+                        <details class="notification-details">
+                            <summary>Wat betekent deze notificatie?</summary>
+                                <p>Je ontvangt een melding wanneer een gast een reserveringsaanvraag indient.</p>
+                        </details>
+
+                        <label class="notification-option-is-required">
+                        E-mail Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked disabled>
+                            <span class="required">(verplicht)</span>
+                        </label>
+
+                        <label class="notification-option">
+                        Push Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked>
+                        </label>
+
+                        <label class="notification-option">
+                        SMS- en Whatsapp Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked>
+                        </label>
+                </fieldset>
+
+                <fieldset class="reservation-section-section">
+                    <legend>Directe reservering aangemaakt (betaling open)</legend>
+
+                        <details class="notification-details">
+                            <summary>Wat betekent deze notificatie?</summary>
+                                <p>Je ontvangt een melding wanneer een directe reservering is aangemaakt en de betaling nog openstaat.</p>
+                        </details>
+
+                        <label class="notification-option">
+                        E-mail Notificaties:
+                            <input type="checkbox" class="checkbox-slider">
+                        </label>
+
+                        <label class="notification-option">
+                        Push Notificaties:
+                        <input type="checkbox" class="checkbox-slider" checked>
+                        </label>
+
+                        <label class="notification-option-is-disabled">
+                        SMS- en Whatsapp Notificaties:
+                            <input type="checkbox" class="checkbox-slider" disabled>
+                                <span class="description">Niet beschikbaar</span>
+                        </label>
+                </fieldset>
+
+                <fieldset class="reservation-section-section">
+                    <legend>Betaling voltooid door gast</legend>
+
+                        <details class="notification-details">
+                            <summary>Wat betekent deze notificatie?</summary>
+                                <p>Je ontvangt een melding wanneer de gast de betaling succesvol heeft afgerond.</p>
+                        </details>
+
+                        <label class="notification-option">
+                        E-mail Notificaties:
+                            <input type="checkbox" class="checkbox-slider">
+                        </label>
+
+                        <label class="notification-option">
+                        Push Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked>
+                        </label>
+
+                        <label class="notification-option-is-disabled">
+                        SMS- en Whatsapp Notificaties:
+                            <input type="checkbox" class="checkbox-slider" disabled>
+                                <span class="description">Niet beschikbaar</span>
+                        </label>
+                </fieldset>
+
+                <fieldset class="reservation-section-section">
+                    <legend>Wijziging voorgesteld</legend>
+
+                        <details class="notification-details">
+                            <summary>Wat betekent deze notificatie?</summary>
+                                <p>Je ontvangt een melding wanneer er een wijziging in de reservering wordt voorgesteld.</p>
+                        </details>
+
+                        <label class="notification-option-is-required">
+                        E-mail Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked disabled>
+                                <span class="required">(verplicht)</span>
+                        </label>
+
+                        <label class="notification-option">
+                        Push Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked>
+                        </label>
+
+                        <label class="notification-option-is-disabled">
+                        SMS- en Whatsapp Notificaties:
+                            <input type="checkbox" class="checkbox-slider" disabled>
+                                <span class="description">Niet beschikbaar</span>
+                        </label>
+                </fieldset>
+
+                <fieldset class="reservation-section-section">
+                    <legend>Nieuwe berichten</legend>
+
+                        <details class="notification-details">
+                            <summary>Wat betekent deze notificatie?</summary>
+                                <p>Je ontvangt een melding wanneer je een nieuw bericht ontvangt.</p>
+                        </details>
+
+                        <label class="notification-option">
+                        E-mail Notificaties:
+                            <input type="checkbox" class="checkbox-slider">
+                        </label>
+
+                        <label class="notification-option">
+                        Push Notificaties:
+                            <input type="checkbox" class="checkbox-slider">
+                        </label>
+
+                        <label class="notification-option">
+                        SMS- en Whatsapp Notificaties:
+                            <input type="checkbox" class="checkbox-slider">
                     </label>
-                </section>
-             <button type="submit" value="save">Save</button>
-            </form>
+                </fieldset>
+            </fieldset>
+
+            <fieldset id="annuleringen" class="cancelations-section">
+                <legend>Annuleringen</legend>
+
+                <fieldset class="cancelations-section-section">
+                    <legend>Annulering door gast</legend>
+
+                        <details class="notification-details">
+                            <summary>Wat betekent deze notificatie?</summary>
+                                <p>Je ontvangt een melding wanneer een gast een reservering annuleert.</p>
+                        </details>
+
+                        <label class="notification-option-is-required">
+                        E-mail Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked disabled>
+                                <span class="required">(verplicht)</span>
+                        </label>
+
+                        <label class="notification-option-is-required">
+                        Push Notificaties:
+                            <input type="checkbox" class="checkbox-slider" checked disabled>
+                                <span class="required">(verplicht)</span>
+                        </label>
+
+                        <label class="notification-option-is-disabled">
+                        SMS- en Whatsapp Notificaties:
+                            <input type="checkbox" class="checkbox-slider" disabled>
+                                <span class="description">Niet beschikbaar</span>
+                        </label>
+                </fieldset>
+            </fieldset>
+        <button class="save-button" type="submit" value="save">Save</button>
+        </form>
 
              <!-- Guest Notifications Form  -->
             <form class="guest-notifications" action="#">
-                    <fieldset id="reserveringen" class="reservations-section">
+                <fieldset id="reserveringen" class="reservations-section">
                     <legend>Reserveringen</legend>
                     
-                    <fieldset class="reservation-section-section">
-                        <legend>Reservering aangevraagd</legend>
+                        <fieldset class="reservation-section-section">
+                            <legend>Reservering aangevraagd</legend>
 
-                            <details class="notification-details">
-                                <summary>Wat betekent deze notificatie?</summary>
-                                    <p>Je ontvangt een melding zodra je een reserveringsaanvraag hebt verstuurd.</p>
-                            </details>
+                                <details class="notification-details">
+                                    <summary>Wat betekent deze notificatie?</summary>
+                                        <p>Je ontvangt een melding zodra je een reserveringsaanvraag hebt verstuurd.</p>
+                                </details>
 
-                            <label class="notification-option-is-required">
-                                E-mail Notificaties:
-                                <input type="checkbox" class="checkbox-slider" checked disabled>
-                                <span class="required">(verplicht)</span>
-                            </label>
+                                <label class="notification-option-is-required">
+                                    E-mail Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" checked disabled>
+                                        <span class="required">(verplicht)</span>
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                Push Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled>
-                                <span class="description">Niet beschikbaar</span>
-                            </label>
+                                <label class="notification-option-is-disabled">
+                                    Push Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled>
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                SMS- en Whatsapp Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled>
-                                <span class="description">Niet beschikbaar</span>
-                            </label>                 
-                    </fieldset>
+                                <label class="notification-option-is-disabled">
+                                    SMS- en Whatsapp Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled>
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>                 
+                        </fieldset>
 
-                    <fieldset class="reservation-section-section">
-                        <legend>Directe reservering aangemaakt (betaling open)</legend>
+                        <fieldset class="reservation-section-section">
+                            <legend>Directe reservering aangemaakt (betaling open)</legend>
 
-                            <details class="notification-details">
-                                <summary>Wat betekent deze notificatie?</summary>
-                                    <p>Je ontvangt een melding wanneer je een reservering aanmaakt en de betaling openstaat.</p>
-                            </details>
+                                <details class="notification-details">
+                                    <summary>Wat betekent deze notificatie?</summary>
+                                        <p>Je ontvangt een melding wanneer je een reservering aanmaakt en de betaling openstaat.</p>
+                                </details>
 
-                            <label class="notification-option-is-required">
-                                E-mail Notificaties:
-                                <input type="checkbox" class="checkbox-slider" checked disabled>
-                                <span class="required">(verplicht)</span>
-                            </label>
+                                <label class="notification-option-is-required">
+                                    E-mail Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" checked disabled>
+                                        <span class="required">(verplicht)</span>
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                Push Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled>
-                                <span class="description">Niet beschikbaar</span>
-                            </label>
+                                <label class="notification-option-is-disabled">
+                                    Push Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled>
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                SMS- en Whatsapp Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled >
-                                <span class="description">Niet beschikbaar</span>
-                            </label>
-                    </fieldset>
+                                <label class="notification-option-is-disabled">
+                                    SMS- en Whatsapp Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled >
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>
+                        </fieldset>
 
-                    <fieldset class="reservation-section-section">
-                        <legend>Wachten op betaling door jou</legend>
+                        <fieldset class="reservation-section-section">
+                            <legend>Wachten op betaling door jou</legend>
 
-                            <details class="notification-details">
-                                <summary>Wat betekent deze notificatie?</summary>
-                                    <p>Je ontvangt een melding zolang de reservering wacht op betaling door jou als gast.</p>
-                            </details>
+                                <details class="notification-details">
+                                    <summary>Wat betekent deze notificatie?</summary>
+                                        <p>Je ontvangt een melding zolang de reservering wacht op betaling door jou als gast.</p>
+                                </details>
 
-                            <label class="notification-option-is-required">
-                                E-mail Notificaties:
-                                <input type="checkbox" class="checkbox-slider" checked disabled>
-                                <span class="required">(verplicht)</span>
-                            </label>
+                                <label class="notification-option-is-required">
+                                    E-mail Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" checked disabled>
+                                        <span class="required">(verplicht)</span>
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                Push Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled>
-                                <span class="description">Niet beschikbaar</span>
-                            </label>
+                                <label class="notification-option-is-disabled">
+                                    Push Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled>
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                SMS- en Whatsapp Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled>
-                                <span class="description">Niet beschikbaar</span>
-                            </label>
-                    </fieldset>
+                                <label class="notification-option-is-disabled">
+                                    SMS- en Whatsapp Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled>
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>
+                        </fieldset>
 
-                    <fieldset class="reservation-section-section">
-                        <legend>Reservering geweigerd door verhuurder</legend>
+                        <fieldset class="reservation-section-section">
+                            <legend>Reservering geweigerd door verhuurder</legend>
 
-                            <details class="notification-details">
-                                <summary>Wat betekent deze notificatie?</summary>
-                                    <p>Je ontvangt een melding wanneer de verhuurder je reserveringsaanvraag heeft geweigerd.</p>
-                            </details>
+                                <details class="notification-details">
+                                    <summary>Wat betekent deze notificatie?</summary>
+                                        <p>Je ontvangt een melding wanneer de verhuurder je reserveringsaanvraag heeft geweigerd.</p>
+                                </details>
 
-                            <label class="notification-option-is-required">
-                                E-mail Notificaties:
-                                <input type="checkbox" class="checkbox-slider" checked disabled>
-                                <span class="required">(verplicht)</span>
-                            </label>
+                                <label class="notification-option-is-required">
+                                    E-mail Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" checked disabled>
+                                        <span class="required">(verplicht)</span>
+                                </label>
 
-                            <label class="notification-option">
-                                Push Notificaties:
-                                <input type="checkbox" class="checkbox-slider">
-                            </label>
+                                <label class="notification-option">
+                                    Push Notificaties:
+                                    <input type="checkbox" class="checkbox-slider">
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                SMS- en Whatsapp Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled>
-                                <span class="description">Niet beschikbaar</span>
-                            </label>
-                    </fieldset>
+                                <label class="notification-option-is-disabled">
+                                    SMS- en Whatsapp Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled>
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>
+                        </fieldset>
 
-                    <fieldset class="reservation-section-section">
-                        <legend>Reservering geaccepteerd</legend>
+                        <fieldset class="reservation-section-section">
+                            <legend>Reservering geaccepteerd</legend>
 
-                            <details class="notification-details">
-                                <summary>Wat betekent deze notificatie?</summary>
-                                    <p>Je ontvangt een melding zodra de verhuurder je reservering heeft geaccepteerd.</p>
-                            </details>
+                                <details class="notification-details">
+                                    <summary>Wat betekent deze notificatie?</summary>
+                                        <p>Je ontvangt een melding zodra de verhuurder je reservering heeft geaccepteerd.</p>
+                                </details>
 
-                            <label class="notification-option-is-required">
-                                E-mail Notificaties:
-                                <input type="checkbox" class="checkbox-slider" checked disabled>
-                                <span class="required">(verplicht)</span>
-                            </label>
+                                <label class="notification-option-is-required">
+                                    E-mail Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" checked disabled>
+                                        <span class="required">(verplicht)</span>
+                                </label>
 
-                            <label class="notification-option">
-                                Push Notificaties:
-                                <input type="checkbox" class="checkbox-slider">
-                            </label>
+                                <label class="notification-option">
+                                    Push Notificaties:
+                                    <input type="checkbox" class="checkbox-slider">
+                                </label>
 
-                            <label class="notification-option-is-required">
-                                SMS- en Whatsapp Notificaties:
-                                <input type="checkbox" class="checkbox-slider" checked disabled>
-                                <span class="required">(verplicht)</span>
-                            </label>
-                    </fieldset>
+                                <label class="notification-option-is-required">
+                                    SMS- en Whatsapp Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" checked disabled>
+                                        <span class="required">(verplicht)</span>
+                                </label>
+                        </fieldset>
 
-                    <fieldset class="reservation-section-section">
-                        <legend>Reservering betaald</legend>
+                        <fieldset class="reservation-section-section">
+                            <legend>Reservering betaald</legend>
 
-                            <details class="notification-details">
-                                <summary>Wat betekent deze notificatie?</summary>
-                                    <p>Je ontvangt een melding wanneer de betaling voor de reservering succesvol is afgerond.</p>
-                            </details>
+                                <details class="notification-details">
+                                    <summary>Wat betekent deze notificatie?</summary>
+                                        <p>Je ontvangt een melding wanneer de betaling voor de reservering succesvol is afgerond.</p>
+                                </details>
 
-                            <label class="notification-option-is-required">
-                                E-mail Notificaties:
-                                <input type="checkbox" class="checkbox-slider" checked disabled>
-                                <span class="required">(verplicht)</span>
-                            </label>
+                                <label class="notification-option-is-required">
+                                    E-mail Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" checked disabled>
+                                        <span class="required">(verplicht)</span>
+                                </label>
 
-                            <label class="notification-option">
-                                Push Notificaties:
-                                <input type="checkbox" class="checkbox-slider">
-                            </label>
+                                <label class="notification-option">
+                                    Push Notificaties:
+                                    <input type="checkbox" class="checkbox-slider">
+                                </label>
 
-                            <label class="notification-option-is-disabled">
-                                SMS- en Whatsapp Notificaties:
-                                <input type="checkbox" class="checkbox-slider" disabled>
-                                <span class="description">Niet beschikbaar</span>
-                            </label>
-                    </fieldset>
+                                <label class="notification-option-is-disabled">
+                                    SMS- en Whatsapp Notificaties:
+                                    <input type="checkbox" class="checkbox-slider" disabled>
+                                        <span class="description">Niet beschikbaar</span>
+                                </label>
+                        </fieldset>
                             
-                    <fieldset class="reservation-section-section">
-                        <legend>Nieuwe berichten</legend>
+                        <fieldset class="reservation-section-section">
+                            <legend>Nieuwe berichten</legend>
 
-                            <details class="notification-details">
-                                <summary>Wat betekent deze notificatie?</summary>
-                                    <p>Je ontvangt een melding wanneer je een nieuw bericht ontvangt.</p>
-                            </details>
+                                <details class="notification-details">
+                                    <summary>Wat betekent deze notificatie?</summary>
+                                        <p>Je ontvangt een melding wanneer je een nieuw bericht ontvangt.</p>
+                                </details>
 
-                            <label class="notification-option">
-                                E-mail Notificaties:
-                                <input type="checkbox" class="checkbox-slider">
-                            </label>
+                                <label class="notification-option">
+                                    E-mail Notificaties:
+                                    <input type="checkbox" class="checkbox-slider">
+                                </label>
 
-                            <label class="notification-option">
-                                Push Notificaties:
-                                <input type="checkbox" class="checkbox-slider">
-                            </label>
+                                <label class="notification-option">
+                                    Push Notificaties:
+                                    <input type="checkbox" class="checkbox-slider">
+                                </label>
 
-                            <label class="notification-option">
-                                SMS- en Whatsapp Notificaties:
-                                <input type="checkbox" class="checkbox-slider">
-                            </label>
-                    </fieldset>
+                                <label class="notification-option">
+                                    SMS- en Whatsapp Notificaties:
+                                    <input type="checkbox" class="checkbox-slider">
+                                </label>
+                        </fieldset>
                     </fieldset>
 
                     <fieldset id="annuleringen" class="cancelations-section">

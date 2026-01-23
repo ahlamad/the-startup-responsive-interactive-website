@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homecamper | Campspace</title>
         <link rel="stylesheet" href="./styles/styleguide-campspace.css">
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/style.css">
     </head>
 
     <body>
@@ -60,8 +60,8 @@
             <nav class="role-navigation">
                 <p class="role-label">Je wijzigt de notificaties momenteel als:</p>
 
-                <button type="button">Verhuurder</button>
-                <button type="button" class="active">Gast</button>
+                <button type="button" id="host-button">Verhuurder</button>
+                <button type="button"  id="guest-button" class="active">Gast</button>
             </nav>
         </header>
 
@@ -72,8 +72,8 @@
                 <a href="#herinneringen">Herinneringen</a>
             </nav>
 
-             <!-- Host Notifications Form 
-            <form class="host-notifications" action="#">
+             <!-- Host Notifications Form -->
+            <form class="host-notifications hidden" action="#">
                 <section class="reservation-section">
                     <h2>Reservations</h2>
 
@@ -150,7 +150,7 @@
                     </label>
                 </section>
              <button type="submit" value="save">Save</button>
-            </form> -->
+            </form>
 
              <!-- Guest Notifications Form  -->
             <form class="guest-notifications" action="#">
@@ -581,5 +581,6 @@
              <button class="save-button" type="submit" value="save">Save</button>
             </form>
         </main>
+        <script src="./script.js"></script>
     </body>
 </html>

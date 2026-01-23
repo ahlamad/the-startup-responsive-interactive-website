@@ -100,7 +100,7 @@ h1 {
 /* Voor de sticky section navigatie */
 main {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: max-content 1fr auto;
 }
 
 .sticky-section-navigation {

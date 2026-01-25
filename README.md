@@ -18,6 +18,7 @@ De gebruiker kan per notificatie aangeven of hij meldingen wil ontvangen via:
 Sommige notificaties zijn verplicht en kunnen niet worden uitgezet. Dit wordt duidelijk gecommuniceerd via disabled checksliders en labels.
 
 <img width="269" height="516" alt="Schermafbeelding 2026-01-25 222130" src="https://github.com/user-attachments/assets/4b028d7d-be79-4134-bdce-36bdb307928f" />
+<img width="458" height="442" alt="image" src="https://github.com/user-attachments/assets/105af21d-33aa-47a2-afa0-e5a5fdd12012" />
 
 
 ### Link naar Github Pages 🌐: 

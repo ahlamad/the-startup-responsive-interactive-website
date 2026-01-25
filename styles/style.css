@@ -101,6 +101,11 @@ h1 {
 main {
   display: grid;
   grid-template-columns: max-content 1fr auto;
+
+  @media (min-width: 1100px) {
+    grid-template-columns: 200px 1fr;
+    gap: 2em;
+  }
 }
 
 .sticky-section-navigation {
@@ -114,6 +119,19 @@ main {
   writing-mode: sideways-lr;
   align-self: start;
   
+  @media (min-width: 700px) {
+    writing-mode: horizontal-tb;
+    flex-direction: column;
+    padding-left: 1em;
+  }
+
+  @media (min-width: 1100px) {
+    padding-top: 0.3em;
+    place-items: center;
+    font-size: 1.5em ;
+    gap: 0.5em;
+  }
+
   a {
     color: var(--color-text);
     text-decoration: none;
@@ -129,6 +147,13 @@ main {
     &:hover {
       color: var(--color-primary);
       text-decoration: underline;
+
+      @media (min-width: 1100px) {
+        background-color: #0DB08A1F;
+        color: var(--color-secondary);
+        border-left: 3px solid ;
+        text-decoration: none;
+      }
     }
 
     &.active {
@@ -137,6 +162,11 @@ main {
       color: var(--color-secondary);
       text-decoration: none;
     }
+
+    @media (min-width: 700px) {
+      border-right: unset;
+      border-left: 3px solid transparent;
+    } 
   }
 }
 
